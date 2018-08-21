@@ -3,16 +3,14 @@
 Implementation of the Hungarian (Munkres) Algorithm using Python and NumPy.
 
 References can be found at:
-- http://www.ams.jhu.edu/~castello/362/Handouts/hungarian.pdf
 - http://weber.ucsd.edu/~vcrawfor/hungar.pdf
 - http://en.wikipedia.org/wiki/Hungarian_algorithm
-- http://www.public.iastate.edu/~ddoty/HungarianAlgorithm.html
 - http://www.clapper.org/software/python/munkres/
 
 
 ## Features
 
-- Automatic padding wih zeros if the matrix is not square.
+- Automatic padding with zeros if the matrix is not square.
 
 ## Requirements
 
