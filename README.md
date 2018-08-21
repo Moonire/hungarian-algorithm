@@ -3,11 +3,11 @@
 Implementation of the Hungarian (Munkres) Algorithm using Python and NumPy.
 
 References can be found at:
-  http://www.ams.jhu.edu/~castello/362/Handouts/hungarian.pdf
-  http://weber.ucsd.edu/~vcrawfor/hungar.pdf
-  http://en.wikipedia.org/wiki/Hungarian_algorithm
-  http://www.public.iastate.edu/~ddoty/HungarianAlgorithm.html
-  http://www.clapper.org/software/python/munkres/
+- http://www.ams.jhu.edu/~castello/362/Handouts/hungarian.pdf
+- http://weber.ucsd.edu/~vcrawfor/hungar.pdf
+- http://en.wikipedia.org/wiki/Hungarian_algorithm
+- http://www.public.iastate.edu/~ddoty/HungarianAlgorithm.html
+- http://www.clapper.org/software/python/munkres/
 
 
 ## Features
@@ -26,7 +26,7 @@ References can be found at:
 
 ## Example
 
-Calling the hungarian class on a Cost matrix can be done as follows:
+Calling the hungarian class on a cost matrix can be done as follows:
 ```python
 from hungarian import hungarian
 
@@ -38,7 +38,7 @@ hungarian = Hungarian()
 hungarian.calculate(cost_matrix)
 ```
 
-If it's a Profit matrix you have instead, you could use both:
+If it's a profit matrix you have instead, you could use both:
 ```python
 hungarian = Hungarian(profit_matrix, is_profit_matrix=True)
 
@@ -47,7 +47,7 @@ cost_matrix = Hungarian.make_cost_matrix(profit_matrix)
 hungarian   = Hungarian(cost_matrix)
 ```
 
-Geting the result and total potential after calculation is done with:
+Getting the result and total potential after calculation is done with:
 ```python
 hungarian.get_results()
 hungarian.get_total_potential()
