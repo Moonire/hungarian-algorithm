@@ -2,7 +2,6 @@
 Implementation of the Hungarian (Munkres) Algorithm using Python and NumPy
 """
 
-# Import numpy. Error if fails
 try:
     import numpy as np
 except ImportError:
@@ -15,7 +14,7 @@ class HungarianError(Exception):
 
 class Hungarian:
     """
-
+    Class encapsulating all the algorithm's functionnaly
     """
 
     def __init__(self, input_matrix=None, is_profit_matrix=False):
