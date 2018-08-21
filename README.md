@@ -50,3 +50,11 @@ Getting the result and total potential after calculation is done with:
 hungarian.get_results()
 hungarian.get_total_potential()
 ```
+
+## Authors
+
+ - Thom Dedecko
+ - Markus Padourek
+ - Marina Kollmitz
+ - Federico Baldassarre
+ - Mounir Mallek
