@@ -21,7 +21,7 @@ for line in open(os.path.join('hungarian_algorithm', '__init__.py')):
 long_description = "See {}".format(distmeta["__url__"])
 
 setup(
-    name="markov_clustering",
+    name="hungarian_algorithm",
     version=distmeta["__version_info__"],
     description="Implementation of the Hungarian (Munkres) algorithm in python.",
     long_description=long_description,
