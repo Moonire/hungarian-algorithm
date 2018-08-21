@@ -28,7 +28,7 @@ References can be found at:
 
 Calling the hungarian class on a cost matrix can be done as follows:
 ```python
-from hungarian import hungarian
+from hungarian import Hungarian
 
 hungarian = Hungarian(cost_matrix)
 hungarian.calculate()
