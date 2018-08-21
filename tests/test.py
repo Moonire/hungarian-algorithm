@@ -2,7 +2,6 @@
 test module for hungarian.py
 """
 import pytest
-import numpy as np
 from hungarian import *
 
 matrices = { 0: ([[62, 75, 80, 93, 95, 97],
@@ -37,18 +36,29 @@ matrices = { 0: ([[62, 75, 80, 93, 95, 97],
                   }
 
 
-def test_hungarian(index, is_profit_matrix=True):
-    M = matrices[index]
+def test_hungarian_0():
+    M = matrices[0]
 
     hungarian = Hungarian()
-    hungarian.calculate(M[0], is_profit_matrix=is_profit_matrix)
+    hungarian.calculate(M[0], is_profit_matrix=True)
 
     assert M[1] == hungarian.get_total_potential()
     assert M[2] == hungarian.get_results()
 
+def test_hungarian_1():
+    M = matrices[1]
 
-if __name__ == '__main__':
+    hungarian = Hungarian()
+    hungarian.calculate(M[0], is_profit_matrix=False)
 
-    test_hungarian(index=0, is_profit_matrix=True)
-    test_hungarian(index=1, is_profit_matrix=False)
-    test_hungarian(index=2, is_profit_matrix=True)
+    assert M[1] == hungarian.get_total_potential()
+    assert M[2] == hungarian.get_results()
+
+def test_hungarian_2():
+    M = matrices[2]
+
+    hungarian = Hungarian()
+    hungarian.calculate(M[0], is_profit_matrix=True)
+
+    assert M[1] == hungarian.get_total_potential()
+    assert M[2] == hungarian.get_results()
