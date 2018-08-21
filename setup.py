@@ -6,7 +6,7 @@ if sys.version_info[0] < 3:
     raise Exception('Hungarian algorithm requires Python 3')
 
 distmeta = {}
-for line in open(os.path.join('hungarian algorithm', '__init__.py')):
+for line in open(os.path.join('hungarian_algorithm', '__init__.py')):
     try:
         field, value = (x.strip() for x in line.split('='))
     except ValueError:
