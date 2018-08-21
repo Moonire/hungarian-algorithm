@@ -2,7 +2,7 @@
 
 Implementation of the Hungarian (Munkres) Algorithm using Python and NumPy.
 
-References can be found at: 
+References can be found at:
   http://www.ams.jhu.edu/~castello/362/Handouts/hungarian.pdf
   http://weber.ucsd.edu/~vcrawfor/hungar.pdf
   http://en.wikipedia.org/wiki/Hungarian_algorithm
