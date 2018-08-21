@@ -1,6 +1,7 @@
 """
 test module for hungarian.py
 """
+import pytest
 import numpy as np
 from hungarian import *
 

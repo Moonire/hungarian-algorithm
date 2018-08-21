@@ -15,26 +15,7 @@ class HungarianError(Exception):
 
 class Hungarian:
     """
-    Implementation of the Hungarian (Munkres) Algorithm using np.
 
-    Usage:
-        hungarian = Hungarian(cost_matrix)
-        hungarian.calculate()
-    or
-        hungarian = Hungarian()
-        hungarian.calculate(cost_matrix)
-
-    Handle Profit matrix:
-        hungarian = Hungarian(profit_matrix, is_profit_matrix=True)
-    or
-        cost_matrix = Hungarian.make_cost_matrix(profit_matrix)
-
-    The matrix will be automatically padded if it is not square.
-    For that numpy's resize function is used, which automatically adds 0's to any row/column that is added
-
-    Get results and total potential after calculation:
-        hungarian.get_results()
-        hungarian.get_total_potential()
     """
 
     def __init__(self, input_matrix=None, is_profit_matrix=False):
