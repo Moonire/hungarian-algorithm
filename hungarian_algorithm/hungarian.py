@@ -2,14 +2,15 @@
 Implementation of the Hungarian (Munkres) Algorithm using Python and NumPy
 """
 
+
+class HungarianError(Exception):
+    pass
+
+
 try:
     import numpy as np
 except ImportError:
     raise HungarianError("NumPy is not installed.")
-
-
-class HungarianError(Exception):
-    pass
 
 
 class Hungarian:
